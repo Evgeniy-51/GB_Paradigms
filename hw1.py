@@ -1,6 +1,6 @@
 def sort_list_imperative(numbers):
     for k in range(len(numbers) - 1):
-        for i in range(len(numbers) - 1):
+        for i in range(len(numbers) - 1 - k):
             if numbers[i] < numbers[i + 1]:
                 numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
     return numbers
